@@ -1,0 +1,26 @@
+def change_or_remove_route(route_list, route_to_change, new_route=None):
+    """
+    Changes or removes a route from the given list of routes.
+
+    Args:
+        route_list (list): List of existing routes.
+        route_to_change (str): The route to change or remove.
+        new_route (str, optional): The new route to replace the existing one. Defaults to None.
+
+    Returns:
+        list: Updated list of routes.
+    """
+    if route_to_change in route_list:
+        if new_route:
+            route_list[route_list.index(route_to_change)] = new_route
+        else:
+            route_list.remove(route_to_change)
+    return route_list
+
+# Example usage:
+existing_routes = ["Route A", "Route B", "Route C"]
+route_to_change = "Route B"
+new_route = "Route X"
+
+updated_routes = change_or_remove_route(existing_routes, route_to_change, new_route)
+print(updated_routes)
