@@ -1,0 +1,14 @@
+<!-- templates/blog/main_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <!-- Add your CSS stylesheets here -->
+</head>
+<body>
+    <h1>{{ some_variable }}</h1>
+    <!-- Add other content here -->
+</body>
+</html>
